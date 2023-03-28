@@ -136,6 +136,11 @@ header {
 }
 
 
+.about-img img{
+  border-radius: 3rem 0 3rem 3rem;
+  height: 600px;
+  }
+
 .home-container { 
   position: relative;
   background-size: cover;
@@ -188,10 +193,38 @@ header {
     transform: scale(1.1);
    }
     
+   .gallery {
+    display: flex;
+    height: 200px;
+    border-radius: 4px;
+  }
 
+  .gallery>.gallery-imgs {
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: brightness(70%);
+  }
+
+  .gallery>.gallery-imgs:hover {
+    flex: 1 1 280px;
+  }
     
 
     
-
+  .button{
+    
+    background-color: #0c87eb;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+  }
+  
+  .button:hover {
+    background-color: #080808;
+    color: #ffffff;
+  }
+  
 
 
