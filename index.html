@@ -8,9 +8,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Lucid Homes</title>
-  <link rel="shortcut icon" href="image/icons8-person-factory-worker-32.png" type="image/xicon">
+  <link rel="shortcut icon" href="image/logo files/lucidhomes favicon small.svg" type="image/xicon">
   <link rel="stylesheet" href="miniproject.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
 
@@ -19,16 +21,16 @@
   <section id="home">
 
     <nav class="navbar nav-area navbar-expand-sm  bg-light fixed-top">
-      <div class=" nav container">
-        <div class="logo"><span>L</span>ucid<span>H</span>omes</div>
+      <div class="nav container">
+        <div class="logo"><img src="image/logo files/lucid homes logo big svg-svg.png"></div>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
           aria-label="Expand Navigation">
-          <span class="navbar-toggler-icon bg-primary"></span>
+          <span><i class="bi bi-list"></i></span>
         </button>
         <div class="collapse navbar-collapse " id="nav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item text-center">
-              <a class="nav-link fw-bold " href="home.html">Home</a>
+              <a class="nav-link fw-bold " href="#home">Home</a>
             </li>
             <li class="nav-item text-center">
               <a class="nav-link fw-bold " href="#rental-units">Rental Units</a>
@@ -37,7 +39,7 @@
               <a class="nav-link fw-bold " href="#facilities">Facilities</a>
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link fw-bold " href="aboutus.html">About</a>
+              <a class="nav-link fw-bold " href="#about">About</a>
             </li>
             <li class="nav-item text-center">
               <a class="nav-link fw-bold " href="#contact-us">Contact Us</a>
@@ -60,23 +62,53 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <form>
-            <div class="modal-header">
+            <div class="modal-header bg-primary text-white">
               <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-circle fs-3 me-2">User Login</i>
+                <i class="bi bi-person-circle fs-3 me-2">Login To Your Account</i>
               </h5>
               <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email" class="form-control shadow-none">
-              </div>
-              <div class="mb-4">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control shadow-none">
-              </div>
-              <div class="d-flex align-items-center justify-content-between mb-2">
-                <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                <div class=" mb-4">
+                  <label class="form-label">Username</label>
+                  <input type="name" id="form1" class="form-control shadow-none" required />
+
+                </div>
+                <div class=" mb-4">
+                  <label class="form-label">Password</label>
+                  <input type="password" id="form2" class="form-control shadow-none" required />
+
+                </div>
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" required checked />
+                      <label class="form-check-label"> Remember me </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <a href="#">Forgot password?</a>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-4 w-75 mx-5">Sign in</button>
+                <div class="text-center">
+                  <p>Not a member? <a href="#">Register</a></p>
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-facebook"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-google"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-twitter"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-github"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </form>
@@ -89,9 +121,9 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <form>
-            <div class="modal-header">
+            <div class="modal-header bg-primary text-white">
               <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-lines-fill fs-3 me-2">User Registration</i>
+                <i class="bi bi-person-lines-fill fs-3 me-2">Create An Account</i>
               </h5>
               <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -101,19 +133,21 @@
                 consectetur adipisicing elit.
                 consectetur adipisicing elit.
               </span>
+
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-6 ps-0 mb-3">
                     <label class="form-label">Name</label>
-                    <input type="text" class="form-control shadow-none">
+                    <input type="text" class="form-control shadow-none" required />
                   </div>
                   <div class="col-md-6 p-0">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control shadow-none">
+                    <input type="email" class="form-control shadow-none" required />
                   </div>
+
                   <div class="col-md-6 ps-0 mb-3">
                     <label class="form-label">Phone Number</label>
-                    <input type="number" class="form-control shadow-none">
+                    <input type="number" class="form-control shadow-none" required />
                   </div>
                   <div class="col-md-6 p-0">
                     <label class="form-label">Picture</label>
@@ -139,10 +173,17 @@
                     <label class="form-label">Confirm Password</label>
                     <input type="passport" class="form-control shadow-none">
                   </div>
-                  <div class="text-center my-1">
-                    <button type="submit" class="btn btn-dark shadow-none">Register</button>
-                  </div>
                 </div>
+              </div>
+              <div class="form-check d-flex justify-content-center mb-5">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                <label class="form-check-label" for="form2Example3">
+                  I agree all statements in <a href="#!">Terms of service</a>
+                </label>
+              </div>
+
+              <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button type="submit" class="btn btn-primary btn-lg">Register</button>
               </div>
           </form>
         </div>
@@ -152,10 +193,10 @@
 
   <div class="home-container" id="home">
     <video src="image/Video3.mp4" class="vid-bg" autoplay loop muted></video>
-    <div class="banner-text">
-      <h1>Find Your Next<br>Perfect Place to <br> Live</h1>
+    <div class="banner-text4">
+      <h1>Find your next home away from home</h1>
 
-      <a href="#" class="btn btn-primary">Sign Up</a>
+      <a href="#" class="btn">Sign Up</a>
 
     </div>
   </div>
@@ -164,272 +205,88 @@
   <div style="height:100px ;"></div>
 
 
-  <div class="container availability-form">
-    <div class="row">
-      <h5 class="col-lg-5 fw-bold">Check Booking Availability</h5>
-      <form>
-        <div class="row align-items-end">
-          <div class="col-lg-3 mb-3">
-            <label class="form-label" style="font-weight: 500;">Check-in</label>
-            <input type="date" class="form-control shadow-none">
-          </div>
-          <div class="col-lg-3 mb-3">
-            <label class="form-label" style="font-weight: 500;">Check-out</label>
-            <input type="date" class="form-control shadow-none">
-          </div>
-          <div class="col-lg-3 mb-3">
-            <label class="form-label" style="font-weight: 500;">Adult</label>
-            <select class="form-select shadow-none">
 
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col-lg-2 mb-3">
-            <label class="form-label" style="font-weight: 500;">Children</label>
-            <select class="form-select shadow-none">
-
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col-lg-1 mb-lg-3 mt-2">
-            <button type="submit" class="btn btn-md btn-primary ">Submit</button>
-          </div>
-
-        </div>
-      </form>
-
-    </div>
-  </div>
-
-  <!-- Our Rooms -->
-
-  <section id="rental-units">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR ROOMS</h2>
-    <div class=" bg-dark"></div>
-    <div class="container">
+  <main>
+    <div class="container availability-form">
       <div class="row">
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-            <div class="inner">
-              <img src="image/unit1/shutterstock_1276888387.jpg" class="card-img-top" alt="...">
+        <h5 class="col-lg-5 fw-bold">Check Booking Availability</h5>
+        <form>
+          <div class="row align-items-end">
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Check-in</label>
+              <input type="date" class="form-control shadow-none">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Cloud</h5>
-              <h6 class="mb-4">Php<b>1999</b> per night/Php<b>25,000</b> per month </h6>
-              <div class="features mb-4">
-                <h6 class="mb-1">Features</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  2 Rooms
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  1 Bathroom
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  1 Balcony
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  3 Sofa
-                </span>
-              </div>
-              <div class="Facilities mb-4">
-                <h6 class="mb-1">Facilities</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Wifi
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Television
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  AC
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Room Heater
-                </span>
-              </div>
-
-              <div class="guests mb-4">
-                <h6 class="mb-1">Guests</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  5 Adults
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  4 Children
-                </span>
-              </div>
-              <div class="rating mb-4">
-
-                <h6 class="mb-1">Rating</h6>
-                <span class="badge rounded-pill bg-light">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                </span>
-              </div>
-              <div class="d-flex justify-content-evenly mb-2">
-                <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#myModal">Book
-                  Now</button>
-                <div class="modal" id="myModal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Book Now</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row"></div>
-                        <form>
-                          <div class="col-md-7 ps-6 mb-6">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control shadow-none">
-                          </div>
-                          <div class="col-md-7 ps-0 mb-3">
-                            <label class="form-label">Last Name</label>
-                            <input type="email" class="form-control">
-                          </div>
-                          <div class="col-md-9 ps-0 mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control">
-                          </div>
-                        </form>
-                      </div>
-
-                      <div class="container availability-form">
-                        <h5 class="col-lg-6 fw-bold">Arriving Date & Time</h5>
-                        <form>
-                          <div class="row align-items-end">
-                            <div class="col-lg-4 mb-3">
-                              <label class="form-label" style="font-weight: 500;">Date</label>
-                              <input type="date" class="form-control shadow-none">
-                            </div>
-                            <div class="col-lg-3 mb-3">
-                              <label class="form-label" style="font-weight: 500;">Minutes</label>
-                              <select class="form-select shadow-none">
-                                <option value="1">00</option>
-                                <option value="2">10</option>
-                                <option value="3">20</option>
-                                <option value="1">30</option>
-                                <option value="2">40</option>
-                                <option value="3">50</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-3 mb-3">
-                              <label class="form-label" style="font-weight: 500;">AM/PM</label>
-                              <select class="form-select shadow-none">
-                                <option value="1">AM</option>
-                                <option value="2">PM</option>
-                              </select>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="container availability-form">
-                        <label class="form-label" style="font-weight: 700;">
-                          <h4>Payment Method</h4>
-                        </label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">
-                            Bank Transfer
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">
-                            Mobile Wallet
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">
-                            Credit Card
-                          </label>
-                        </div>
-
-                      </div>
-
-                      <span class="form-payment-total mt-1 p-2">
-                        <span id="total-text">
-                          <p class="fw-bold"> Total</p>
-                        </span>
-                      </span>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">CheckOut</button>
-                        <button type="submit" class="btn btn-light text-dark">Cancel</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  More Details
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="gallery">
-                          <img src="image/unit1/room1.jpg" class="gallery-imgs" alt="">
-                          <img src="image/unit1/shutterstock_1276888387.jpg" class="gallery-imgs" alt="">
-                          <img src="image/unit1/rm3.jpg" class="gallery-imgs" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Check-out</label>
+              <input type="date" class="form-control shadow-none">
             </div>
+            <div class="col-lg-3 mb-3">
+              <label class="form-label" style="font-weight: 500;">Adult</label>
+              <input type="number" class="form-control shadow-none" />
+              </select>
+            </div>
+            <div class="col-lg-2 mb-3">
+              <label class="form-label" style="font-weight: 500;">Children</label>
+              <input type="number" class="form-control shadow-none" />
+              </select>
+            </div>
+            <div class="col-lg-1 mb-lg-3 mt-2">
+              <button type="submit" class="btn btn-md  ">Submit</button>
+            </div>
+
           </div>
-        </div>
+        </form>
 
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-            <div class="inner">
-              <img src="image/unit2/shutterstock_1025464807.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Sky</h5>
-              <h6 class="mb-4">Php<b>2999</b> per night/Php<b>30,000</b> per month </h6>
-              <div class="features mb-4">
-                <h6 class="mb-1">Features</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  2 Rooms
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  1 Bathroom
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  1 Balcony
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  3 Sofa
-                </span>
+      </div>
+    </div>
+
+    <!-- Our Rooms -->
+
+    <section id="rental-units">
+      <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR RENTAL UNITS</h2>
+      <div class=" bg-dark"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 my-3">
+            <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+              <div class="inner">
+                <img src="image/unit1/shutterstock_1276888387.jpg" class="card-img-top" alt="...">
               </div>
-              <div class="Facilities mb-4">
-                <h6 class="mb-1">Facilities</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Wifi
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Television
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  AC
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Room Heater
-                </span>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Cloud</h5>
+                <h6 class="mb-4">Php<b>1999</b> per night </h6>
+                <h6 class="mb-4 ">Php<b>25,000</b> per month </h6>
+                <div class="features mb-4">
+                  <h6 class="mb-1">Features</h6>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    2 Rooms
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    1 Bathroom
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    1 Balcony
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    3 Sofa
+                  </span>
+                </div>
+                <div class="Facilities mb-4">
+                  <h6 class="mb-1">Facilities</h6>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Wifi
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Television
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    AC
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Room Heater
+                  </span>
+                </div>
+
                 <div class="guests mb-4">
                   <h6 class="mb-1">Guests</h6>
                   <span class="badge rounded-pill bg-light text-dark text-wrap">
@@ -438,7 +295,6 @@
                   <span class="badge rounded-pill bg-light text-dark text-wrap">
                     4 Children
                   </span>
-
                 </div>
                 <div class="rating mb-4">
 
@@ -451,13 +307,13 @@
                   </span>
                 </div>
                 <div class="d-flex justify-content-evenly mb-2">
-                  <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                  <button type="button" class="btn button " data-bs-toggle="modal" data-bs-target="#myModal">Book
                     Now</button>
                   <div class="modal" id="myModal">
                     <div class="modal-dialog">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Book Now</h5>
+                        <div class="modal-header bg-primary text-white">
+                          <h5 class="modal-title ">Book Now</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">
@@ -468,7 +324,7 @@
                               <input type="text" class="form-control shadow-none">
                             </div>
                             <div class="col-md-7 ps-0 mb-3">
-                              <label class="form-label">Last Name</label>
+                              <label class="form-label pt-3">Last Name</label>
                               <input type="email" class="form-control">
                             </div>
                             <div class="col-md-9 ps-0 mb-3">
@@ -498,7 +354,6 @@
                                 </select>
                               </div>
                               <div class="col-lg-3 mb-3">
-                                <label class="form-label" style="font-weight: 500;">AM/PM</label>
                                 <select class="form-select shadow-none">
                                   <option value="1">AM</option>
                                   <option value="2">PM</option>
@@ -523,12 +378,7 @@
                               Mobile Wallet
                             </label>
                           </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              Credit Card
-                            </label>
-                          </div>
+
 
                         </div>
 
@@ -554,15 +404,15 @@
                     aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header bg-primary text-white">
                           <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                           <div class="gallery">
-                            <img src="image/unit2/shutterstock_1025464807.jpg" class="gallery-imgs" alt="">
-                            <img src="image/unit2/room2.jpg" class="gallery-imgs" alt="">
-                            <img src="image/unit2/r3.jpg" class="gallery-imgs" alt="">
+                            <img src="image/unit1/room1.jpg" class="gallery-imgs" alt="">
+                            <img src="image/unit1/shutterstock_1276888387.jpg" class="gallery-imgs" alt="">
+                            <img src="image/unit1/rm3.jpg" class="gallery-imgs" alt="">
                           </div>
                         </div>
                       </div>
@@ -572,427 +422,606 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-            <div class="inner">
-              <img src="image/unit3/rm2.jpg" class="card-img-top" alt="...">
+          <div class="col-lg-4 col-md-6 my-3">
+            <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+              <div class="inner">
+                <img src="image/unit2/shutterstock_1025464807.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Sky</h5>
+                <h6 class="mb-4">Php<b>2999</b> per night </h6>
+                <h6 class="mb-4">Php<b>30,000</b> per month </h6>
+                <div class="features mb-4">
+                  <h6 class="mb-1">Features</h6>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    2 Rooms
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    1 Bathroom
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    1 Balcony
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    3 Sofa
+                  </span>
+                </div>
+                <div class="Facilities mb-4">
+                  <h6 class="mb-1">Facilities</h6>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Wifi
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Television
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    AC
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Room Heater
+                  </span>
+                  <div class="guests mb-4">
+                    <h6 class="mb-1">Guests</h6>
+                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                      5 Adults
+                    </span>
+                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                      4 Children
+                    </span>
+
+                  </div>
+                  <div class="rating mb-4">
+
+                    <h6 class="mb-1">Rating</h6>
+                    <span class="badge rounded-pill bg-light">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </span>
+                  </div>
+                  <div class="d-flex justify-content-evenly mb-2">
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                      Now</button>
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Book Now</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="col-md-7 ps-6 mb-6">
+                                <label class="form-label">First</label>
+                                <input type="text" class="form-control shadow-none">
+                              </div>
+
+                              <div class="col-md-5 ps-5 mb-6">
+                                <label class="form-label pt-3">Last Name</label>
+                                <input type="email" class="form-control">
+                              </div>
+                              <div class="col-md-9 ps-0 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                              </div>
+                            </form>
+                          </div>
+
+                          <div class="container availability-form">
+                            <h5 class="col-lg-6 fw-bold">Arriving Date & Time</h5>
+                            <form>
+                              <div class="row align-items-end">
+                                <div class="col-lg-4 mb-3">
+                                  <label class="form-label" style="font-weight: 500;">Date</label>
+                                  <input type="date" class="form-control shadow-none">
+                                </div>
+                                <div class="col-lg-3 mb-3">
+                                  <label class="form-label" style="font-weight: 500;">Minutes</label>
+                                  <select class="form-select shadow-none">
+                                    <option value="1">00</option>
+                                    <option value="2">10</option>
+                                    <option value="3">20</option>
+                                    <option value="1">30</option>
+                                    <option value="2">40</option>
+                                    <option value="3">50</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3 mb-3">
+                                  <select class="form-select shadow-none">
+                                    <option value="1">AM</option>
+                                    <option value="2">PM</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="container availability-form">
+                            <label class="form-label" style="font-weight: 700;">
+                              <h4>Payment Method</h4>
+                            </label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Bank Transfer
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Mobile Wallet
+                              </label>
+                            </div>
+
+
+                          </div>
+
+                          <span class="form-payment-total mt-1 p-2">
+                            <span id="total-text">
+                              <p class="fw-bold"> Total</p>
+                            </span>
+                          </span>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">CheckOut</button>
+                            <button type="submit" class="btn btn-light text-dark">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary text-white">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="gallery">
+                              <img src="image/unit2/shutterstock_1025464807.jpg" class="gallery-imgs" alt="">
+                              <img src="image/unit2/room2.jpg" class="gallery-imgs" alt="">
+                              <img src="image/unit2/r3.jpg" class="gallery-imgs" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 my-3">
+            <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+              <div class="inner">
+                <img src="image/unit3/rm2.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Aurora</h5>
+                <h6 class="mb-4">Php<b>3999</b> per night</h6>
+                <h6 class="mb-4">Php<b>40,000</b> per month </h6>
+                <div class="features mb-4">
+                  <h6 class="mb-1">Features</h6>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    2 Rooms
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    1 Bathroom
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    1 Balcony
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    3 Sofa
+                  </span>
+                </div>
+                <div class="Facilities mb-4">
+                  <h6 class="mb-1">Facilities</h6>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Wifi
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Television
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    AC
+                  </span>
+                  <span class="badge rounded-pill bg-light text-dark text-wrap">
+                    Room Heater
+                  </span>
+
+                  <div class="guests mb-4">
+                    <h6 class="mb-1">Guests</h6>
+                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                      5 Adults
+                    </span>
+                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                      4 Children
+                    </span>
+                  </div>
+
+                  <div class="rating mb-4">
+
+                    <h6 class="mb-1">Rating</h6>
+                    <span class="badge rounded-pill bg-light">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </span>
+                  </div>
+                  <div class="d-flex justify-content-evenly mb-2">
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                      Now</button>
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Book Now</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row"></div>
+                            <form>
+                              <div class="col-md-7 ps-6 mb-6">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control shadow-none">
+                              </div>
+                              <div class="col-md-7 ps-0 mb-3">
+                                <label class="form-label pt-3">Last Name</label>
+                                <input type="email" class="form-control">
+                              </div>
+                              <div class="col-md-9 ps-0 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                              </div>
+                            </form>
+                          </div>
+
+                          <div class="container availability-form">
+                            <h5 class="col-lg-6 fw-bold">Arriving Date & Time</h5>
+                            <form>
+                              <div class="row align-items-end">
+                                <div class="col-lg-4 mb-3">
+                                  <label class="form-label" style="font-weight: 500;">Date</label>
+                                  <input type="date" class="form-control shadow-none">
+                                </div>
+                                <div class="col-lg-3 mb-3">
+                                  <label class="form-label" style="font-weight: 500;">Minutes</label>
+                                  <select class="form-select shadow-none">
+                                    <option value="1">00</option>
+                                    <option value="2">10</option>
+                                    <option value="3">20</option>
+                                    <option value="1">30</option>
+                                    <option value="2">40</option>
+                                    <option value="3">50</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3 mb-3">
+                                  <select class="form-select shadow-none">
+                                    <option value="1">AM</option>
+                                    <option value="2">PM</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="container availability-form">
+                            <label class="form-label" style="font-weight: 700;">
+                              <h4>Payment Method</h4>
+                            </label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Bank Transfer
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Mobile Wallet
+                              </label>
+                            </div>
+
+
+                          </div>
+
+                          <span class="form-payment-total mt-1 p-2">
+                            <span id="total-text">
+                              <p class="fw-bold"> Total</p>
+                            </span>
+                          </span>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">CheckOut</button>
+                            <button type="submit" class="btn btn-light text-dark">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary text-white">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="gallery">
+                              <img src="image/unit3/room3.jpg" class="gallery-imgs" alt="">
+                              <img src="image/unit3/r3.jpeg" class="gallery-imgs" alt="">
+                              <img src="image/unit3/rm2.jpg" class="gallery-imgs" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities">
+      <div class="my-5 px-4">
+        <h2 class="fw-bold h-font text-center">OUR FACILITIES & AMMENITIES</h2>
+
+        <div class="bg-dark"></div>
+        <p class="text-center mt-3">
+          Our Condo units are situated on high rise buildings with world class facilities and amenities for an
+          experience
+          they will surely remember.
+        </p>
+      </div>
+      <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-wrapper container-sm d-flex  justify-content-around">
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/fitness gym.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class=" text-center fw-bolder">Fitness Gym</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/open garden park space.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Garden Park Space</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+
+                </div>
+              </div>
+
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/swimming pool.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Swimming Pool</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wrapper container-sm d-flex   justify-content-around">
+              <div class="card-carousel  " style="width: 18rem;">
+                <img src="image/aminities/gazebos.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Gazebos</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/playground.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Playground</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/store.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Convenience Store</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wrapper container-sm d-flex  justify-content-around">
+              <div class="card-carousel " style="width: 18rem;">
+                <img src="image/aminities/deck.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">View Deck</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/basketball.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Basketball Court</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing iste
+                    dignissimos.</p>
+                </div>
+
+              </div>
+              <div class="card-carousel" style="width: 18rem;">
+                <img src="image/aminities/game area.jpg" class="card-img-top" alt="">
+                <div class="description">
+                  <h3 class="card-title text-center fw-bolder">Game Area</h3>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
+                    dignissimos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div style="height:100px ;"></div>
+
+    <section id="about">
+      <div class="my-5 px-4">
+        <h2 class="fw-bold h-font text-center fw-bold">ABOUT US</h2>
+
+        <p class="text-center mt-3 mx-4 my-4 mb-4 p-5">
+          My name is Videla Lacrosse. I am the owner of Lucid Homes. Since I was a child, I dreamed of having a space a
+          could call mine.
+          When I grew older and exposed to modern living, I was inspired to create spaces of homes where busy homebody
+          people
+          could feel the beauty of home while living in the bustling city.
+        </p>
+
+      </div>
+
+
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
             <div class="card-body">
-              <h5 class="card-title">Aurora</h5>
-              <h6 class="mb-4">Php<b>3999</b> per night/Php<b>40,000</b> per month </h6>
-              <div class="features mb-4">
-                <h6 class="mb-1">Features</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  2 Rooms
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  1 Bathroom
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  1 Balcony
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  3 Sofa
-                </span>
-              </div>
-              <div class="Facilities mb-4">
-                <h6 class="mb-1">Facilities</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Wifi
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Television
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  AC
-                </span>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                  Room Heater
-                </span>
-
-                <div class="guests mb-4">
-                  <h6 class="mb-1">Guests</h6>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                    5 Adults
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                    4 Children
-                  </span>
-                </div>
-
-                <div class="rating mb-4">
-
-                  <h6 class="mb-1">Rating</h6>
-                  <span class="badge rounded-pill bg-light">
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                  </span>
-                </div>
-                <div class="d-flex justify-content-evenly mb-2">
-                  <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#myModal">Book
-                    Now</button>
-                  <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Book Now</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row"></div>
-                          <form>
-                            <div class="col-md-7 ps-6 mb-6">
-                              <label class="form-label">First Name</label>
-                              <input type="text" class="form-control shadow-none">
-                            </div>
-                            <div class="col-md-7 ps-0 mb-3">
-                              <label class="form-label">Last Name</label>
-                              <input type="email" class="form-control">
-                            </div>
-                            <div class="col-md-9 ps-0 mb-3">
-                              <label class="form-label">Email</label>
-                              <input type="email" class="form-control">
-                            </div>
-                          </form>
-                        </div>
-
-                        <div class="container availability-form">
-                          <h5 class="col-lg-6 fw-bold">Arriving Date & Time</h5>
-                          <form>
-                            <div class="row align-items-end">
-                              <div class="col-lg-4 mb-3">
-                                <label class="form-label" style="font-weight: 500;">Date</label>
-                                <input type="date" class="form-control shadow-none">
-                              </div>
-                              <div class="col-lg-3 mb-3">
-                                <label class="form-label" style="font-weight: 500;">Minutes</label>
-                                <select class="form-select shadow-none">
-                                  <option value="1">00</option>
-                                  <option value="2">10</option>
-                                  <option value="3">20</option>
-                                  <option value="1">30</option>
-                                  <option value="2">40</option>
-                                  <option value="3">50</option>
-                                </select>
-                              </div>
-                              <div class="col-lg-3 mb-3">
-                                <label class="form-label" style="font-weight: 500;">AM/PM</label>
-                                <select class="form-select shadow-none">
-                                  <option value="1">AM</option>
-                                  <option value="2">PM</option>
-                                </select>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="container availability-form">
-                          <label class="form-label" style="font-weight: 700;">
-                            <h4>Payment Method</h4>
-                          </label>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              Bank Transfer
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              Mobile Wallet
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              Credit Card
-                            </label>
-                          </div>
-
-                        </div>
-
-                        <span class="form-payment-total mt-1 p-2">
-                          <span id="total-text">
-                            <p class="fw-bold"> Total</p>
-                          </span>
-                        </span>
-                        <div class="modal-footer">
-                          <button type="submit" class="btn btn-primary">CheckOut</button>
-                          <button type="submit" class="btn btn-light text-dark">Cancel</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    More Details
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="gallery">
-                            <img src="image/unit3/room3.jpg" class="gallery-imgs" alt="">
-                            <img src="image/unit3/r3.jpeg" class="gallery-imgs" alt="">
-                            <img src="image/unit3/rm2.jpg" class="gallery-imgs" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="about-text">
+                <h2 class="text-black fw-bolder">We Provide The Best <br>Condo Space For You!</h2>
+                <p>
+                  <br>
+                  At Lucid Homes, you do not only experience a wonderful stay in the high-rise condo complex in Cagayan
+                  de Oro City,
+                  you will also get to enjoy life with our units embraced with cozy and ambient interior design perfect
+                  for your daily
+                  living.
+                  <br>
+                  <br>
+                  What makes our rental spaces different from others is that, we create a homey, cozy and convenient
+                  interior design
+                  suitable for a short term or a long term stay.
+                </p>
+                <button type="btn" class="btn " id="btn-text">Learn More</button>
               </div>
             </div>
           </div>
-        </div>
-
-
-
-      </div>
-    </div>
-  </section>
-
-  <section id="facilities">
-    <div class="my-5 px-4">
-      <h2 class="fw-bold h-font text-center">OUR FACILITIES & AMMENITIES</h2>
-
-      <div class="bg-dark"></div>
-      <p class="text-center mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-      </p>
-    </div>
-    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card-wrapper container-sm d-flex  justify-content-around">
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/fitness gym.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Fitness Gym</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
+          <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+            <div class="about-img">
+              <img src="image/owner.jpg" class="w-90">
             </div>
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/open garden park space.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Garden Park Space</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-
-              </div>
-            </div>
-
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/swimming pool.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Swimming Pool</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card-wrapper container-sm d-flex   justify-content-around">
-            <div class="card-carousel  " style="width: 18rem;">
-              <img src="image/aminities/gazebos.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Gazebos</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-            </div>
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/playground.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Playground</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-            </div>
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/store.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Convenience Store</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card-wrapper container-sm d-flex  justify-content-around">
-            <div class="card-carousel " style="width: 18rem;">
-              <img src="image/aminities/deck.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">View Deck</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-            </div>
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/basketball.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Basketball Court</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-
-            </div>
-            <div class="card-carousel" style="width: 18rem;">
-              <img src="image/aminities/game area.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bolder">Game Area</h5>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                  dignissimos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <div style="height:100px ;"></div>
-
-  <section id="about">
-    <div class="my-5 px-4">
-      <h2 class="fw-bold h-font text-center fw-bold">ABOUT US</h2>
-
-
-      <p class="text-center mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-      </p>
-    </div>
-
-
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-          <div class="card-body">
-            <div class="about-text">
-              <h2 class="text-black fw-bolder">We Provide The Best <br>Property For You!</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-          <div class="about-img">
-            <img src="image/owner.jpg" class="w-90">
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4 px-4">
-          <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-            <span class="badge bg-light text-dark fs-6 p-2">
-              <img src="image/icons8-office-building-48.png">
-            </span>
-            <h4 class="mt-3">100+ ROOMS</h4>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+              <span class="badge bg-light text-dark fs-6 p-2">
+                <img src="image/icons8-office-building-48.png">
+              </span>
+              <h4 class="mt-3">3 Condo Rental Units</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-3 col-md-6 mb-4 px-4">
-          <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-            <img src="image/5374800.jpg" width="70px" height="70px">
-            <h4 class="mt-3">200+ CUSTOMERS</h4>
+          <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class=" bg-white rounded shadow p-4 border-top border-4 text-center box">
+              <span class="badge bg-light text-dark fs-6 p-2">
+                <img src=" image/5374800.jpg" width="70px" height="70px">
+              </span>
+              <h4 class="mt-3">200+ CUSTOMERS</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-3 col-md-6 mb-4 px-4">
-          <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-            <span class="badge bg-light text-dark fs-6 p-2">
-              <img src="image/icons8-star-48.png">
-            </span>
-            <h4 class="mt-3">150+ REVIEWS</h4>
+          <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+              <span class="badge bg-light text-dark fs-6 p-2">
+                <img src="image/icons8-star-48.png">
+              </span>
+              <h4 class="mt-3">150+ REVIEWS</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-3 col-md-6 mb-4 px-4">
-          <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-            <span class="badge bg-light text-dark fs-6 p-2">
-              <img src="image/icons8-person-office-worker-48.png">
-            </span>
-            <h4 class="mt-3">200+ STAFFS</h4>
+          <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
+              <span class="badge bg-light text-dark fs-6 p-2">
+                <img src="image/icons8-person-office-worker-48.png">
+              </span>
+              <h4 class="mt-3">10 STAFFS</h4>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
-  </section>
-  </section>
-  <section id="contact-us">
-    <div class="my-5 px-4">
-      <h2 class="fw-bold h-font text-center fw-bold">CONTACT US</h2>
+    </section>
+    </section>
+    <section id="contact-us">
+      <div class="my-5 px-4">
+        <h2 class="fw-bold h-font text-center fw-bold">CONTACT US</h2>
 
-      <div class="h-line bg-dark"></div>
-      <p class="text-center mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-      </p>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 mb-5 px-4">
-          <div class="bg-white rounded shadow p-4 ">
-            <iframe class="w-100 rounded mb-4" height="320px"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252625.1000038605!2d124.49883013756794!3d8.375357750629556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8ef505e93b95%3A0x6d6e8b3dd91c7c6c!2sCagayan%20De%20Oro%20City%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1679159023781!5m2!1sen!2sph"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h5>Address</h5>
-            <a href="https://goo.gl/maps/jFdoRUnTvq314zJy6" target="_blank"
-              class="d-inline-block text-decoration-none text-dark mb-2">
-              <i class="bi bi-geo-alt-fill"></i> Cagayan de Oro City, Misamis Oriental, Philippines 9000
-            </a>
-            <h5 class="mt-4">Call us</h5>
-            <a href="tel: +94768799665" class="d-inline-block mb-2 text-decoration-none text-dark"><i
-                class="bi bi-telephone-fill"></i> +639123456789</a>
-            <br>
-            <a href="tel: +94768799665" class="d-inline-block mb-2 text-decoration-none text-dark"><i
-                class="bi bi-telephone-fill"></i> +639123456789</a>
-            <h5 class="mt-4">Email</h5>
-            <a href="mailto: dineshslweb@gmail.com" class="d-inline-block mb-2 text-decoration-none text-dark"><i
-                class="bi bi-envelope-fill"></i> contact@lucidhomes.com</a>
 
-            <div class="bg-white p-4 rounded">
+        <p class="text-center mt-3">
+          Got more questions? Feel free to message us and we'll get back to you the soonest!
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 ">
+              <iframe class="w-100 rounded mb-4" height="320px"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252625.1000038605!2d124.49883013756794!3d8.375357750629556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8ef505e93b95%3A0x6d6e8b3dd91c7c6c!2sCagayan%20De%20Oro%20City%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1679159023781!5m2!1sen!2sph"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <h5>City Address</h5>
+              <a href="https://goo.gl/maps/imJ7QzjEzVdEaqpF7" target="_blank"
+                class="d-inline-block text-decoration-none text-dark mb-2">
+                <i class="bi bi-geo-alt-fill"></i> Cagayan de Oro City, Misamis Oriental, Philippines 9000
+              </a>
+              <h5 class="mt-4">Call us</h5>
+              <a href="tel: +94768799665" class="d-inline-block mb-2 text-decoration-none text-dark"><i
+                  class="bi bi-telephone-fill"></i> +639123456789</a>
+              <br>
+              <a href="tel: +94768799665" class="d-inline-block mb-2 text-decoration-none text-dark"><i
+                  class="bi bi-telephone-fill"></i> +639123456789</a>
+              <h5 class="mt-4">Email</h5>
+              <a href="mailto: dineshslweb@gmail.com" class="d-inline-block mb-2 text-decoration-none text-dark"><i
+                  class="bi bi-envelope-fill"></i> contact@lucidhomes.com</a>
+
               <h5>Follow us</h5>
               <a href="#" class="d-inline-block mb-3">
                 <span class="badge bg-light text-dark fs-6 p-2">
@@ -1011,107 +1040,106 @@
                   <i class="bi bi-instagram  me-1"></i>Instagram
                 </span>
               </a>
+
+
+
             </div>
-
-            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4">
+              <form>
+                <h5>Send a message</h5>
+                <div class="mb-3">
+                  <label class="form-label" style="font-weight: 500;">Name</label>
+                  <input type="text" class="form-control shadow-none">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" style="font-weight: 500;">Email</label>
+                  <input type="email" class="form-control shadow-none">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" style="font-weight: 500;">Subject</label>
+                  <input type="text" class="form-control shadow-none">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" style="font-weight: 500;">Message</label>
+                  <textarea class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn  custom-bg mt-3">Send</button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 mb-5 px-4">
-          <div class="bg-white rounded shadow p-4">
-            <form>
-              <h5>Send a message</h5>
-              <div class="mb-3">
-                <label class="form-label" style="font-weight: 500;">Name</label>
-                <input type="text" class="form-control shadow-none">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" style="font-weight: 500;">Email</label>
-                <input type="email" class="form-control shadow-none">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" style="font-weight: 500;">Subject</label>
-                <input type="text" class="form-control shadow-none">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" style="font-weight: 500;">Message</label>
-                <textarea class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
-              </div>
-              <button type="submit" class="btn text-white btn-primary custom-bg mt-3">Send</button>
-            </form>
+      </div>
+
+    </section>
+
+
+    <div class="container-fluid mt-5 pt-5" id="footer">
+      <div class="row g-5">
+        <div class="col-lg-3 p-6">
+          <div class="header">
+            <div class="logo"><img src="image/logo files/lucid homes logo big svg-svg.png"></div>
+          </div>
+          <p class="text-dark mb-5 ">Lucid Homes is a condo rental business aimed to provide the coziest stay for
+            couples,
+            friends, family, or even single people without having to travel miles away from the city.
+          </p>
+        </div>
+
+        <div class="col-lg-3 p-6">
+          <h5 class="mb-3 text-dark "> Quick Links</h5>
+          <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
+          <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Rental Units</a><br>
+          <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Facilities</a><br>
+          <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">About</a><br>
+          <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Contact Us</a><br>
+          <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Terms & Condition</a>
+        </div>
+
+
+
+        <div class="  col-lg-3 p-6">
+          <h5 class="mb-3 text-dark ">Get in Touch</h5>
+          <p class="mb-2 text-dark "> <i class="bi bi-geo-alt"></i>123 Street, CDO</p>
+
+          <p class="mb-2 text-dark "><i class="bi bi-telephone"></i>123-456-789</p>
+          <p class="mb-2 text-dark "><i class="bi bi-envelope"></i> <span>contact@lucidhomes.com</span> </p>
+
+
+          <div class="flex pt-2">
+            <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-facebook me-1"></i></i></a>
+            <a href="" class="btn2 btn-outline-light  btn-social"> <i class="bi bi-twitter me-1 "></i></i></a>
+            <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-youtube me-1"></i></i></a>
+            <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-linkedin me-1"></i></a>
           </div>
         </div>
+        <div class="letter-box col-lg-3 p-6">
+          <h5 class="mb-3 text-dark ">Newsletter</h5>
+          <p class="mb-2 text-dark "> Subscribe and get daily, weekly and monthly newsletter from us!</p>
+
+
+
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input type="text" class="form-relative text-dark bg-transparent w-100 py-3 ps-4 pe-5"
+              placeholder="Your Email">
+            <button class="btn  py-2 position-absolute  top-0 end-0 mt-2 me-2" type="button">SignUp</button>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="footer-bg">
+        <h6 class=" text-center  text-white p-3 m-0">Copyright 2023| All Right Reserved</h6>
       </div>
     </div>
-    </div>
-  </section>
-
-
-  <div class="container-fluid mt-5 pt-5" id="footer">
-    <div class="row g-5">
-      <div class="col-lg-3 p-6">
-        <div class="header mb-3">
-          <div class="logo"><span>L</span>ucid<span>H</span>omes</div>
-        </div>
-        <p class="text-dark ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-      </div>
-
-      <div class="col-lg-3 p-6">
-        <h5 class="mb-3 text-dark "> Quick Links</h5>
-        <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
-        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Rental Units</a><br>
-        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Facilities</a><br>
-        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">About</a><br>
-        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Contact Us</a><br>
-        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Terms & Condition</a>
-      </div>
-
-
-
-      <div class="  col-lg-3 p-6">
-        <h5 class="mb-3 text-dark ">Get in Touch</h5>
-        <p class="mb-2 text-dark "> <i class="bi bi-geo-alt"></i>123 Street, CDO</p>
-
-        <p class="mb-2 text-dark "><i class="bi bi-telephone"></i>123-456-789</p>
-        <p class="mb-2 text-dark "><i class="bi bi-envelope"></i> <span>contact@lucidhomes.com</span> </p>
-
-
-        <div class="flex pt-2">
-          <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-facebook me-1"></i></i></a>
-          <a href="" class="btn2 btn-outline-light  btn-social"> <i class="bi bi-twitter me-1 "></i></i></a>
-          <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-youtube me-1"></i></i></a>
-          <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-linkedin me-1"></i></a>
-        </div>
-      </div>
-      <div class="  col-lg-3 p-6">
-        <h5 class="mb-3 text-dark ">Newsletter</h5>
-        <p class="mb-2 text-dark "> Lorem, ipsum dolor sit amet consectur adipisicing elit. Similique!</p>
-
-
-
-        <div class="position-relative mx-auto" style="max-width: 400px;">
-          <input type="text" class="form-relative text-dark bg-transparent w-100 py-3 ps-4 pe-5"
-            placeholder="Your Email">
-          <button class="btn  py-2 position-absolute btn-primary top-0 end-0 mt-2 me-2" type="button">SignUp</button>
-        </div>
-      </div>
-
-
-
-    </div>
-    <h6 class="text-center bg-primary text-white p-3 m-0" id="text-footer">Copyright 2023| All Right Reserved</h6>
-  </div>
-
-
-
+  </main>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sah384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
 
 
 </body>
