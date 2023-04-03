@@ -45,7 +45,7 @@
               <a class="nav-link fw-bold " href="#contact-us">Contact Us</a>
             </li>
           </ul>
-          <div class="d-flex" role="search">
+          <div class="d-flex justify-content-center" role="search">
             <button class="btn1" type="btn  shadow-none me-lg-3 me-2" data-bs-toggle="modal"
               data-bs-target="#loginModel">Login </button>
             <button class="btn1" type="btn  shadow-none" data-bs-toggle="modal" data-bs-target="#registerModel">Register
@@ -62,7 +62,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <form>
-            <div class="modal-header bg-primary text-white">
+            <div class="modal-header text-white">
               <h5 class="modal-title d-flex align-items-center">
                 <i class="bi bi-person-circle fs-3 me-2">Login To Your Account</i>
               </h5>
@@ -92,9 +92,9 @@
                     <a href="#">Forgot password?</a>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block mb-4 w-75 mx-5">Sign in</button>
+                <button type="submit" class="btn  btn-block mb-4 w-75 mx-5">Sign in</button>
                 <div class="text-center">
-                  <p>Not a member? <a href="#">Register</a></p>
+                  <p>Not a member? <a href="#login">Register</a></p>
                   <p>or sign up with:</p>
                   <button type="button" class="btn btn-link btn-floating mx-1">
                     <i class="bi bi-facebook"></i>
@@ -121,7 +121,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <form>
-            <div class="modal-header bg-primary text-white">
+            <div class="modal-header text-white">
               <h5 class="modal-title d-flex align-items-center">
                 <i class="bi bi-person-lines-fill fs-3 me-2">Create An Account</i>
               </h5>
@@ -183,24 +183,20 @@
               </div>
 
               <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                <button type="submit" class="btn ">Register</button>
               </div>
           </form>
         </div>
       </div>
     </div>
   </section>
+
+
   <header>
-
-    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
     <div class="overlay"></div>
-
-    <!-- The HTML5 video element that will create the background video on the header -->
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="image/Video3.mp4" type="video/mp4">
     </video>
-
-    <!-- The header content -->
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
@@ -387,10 +383,7 @@
                               Mobile Wallet
                             </label>
                           </div>
-
-
                         </div>
-
                         <span class="form-payment-total mt-1 p-2">
                           <span id="total-text">
                             <p class="fw-bold"> Total</p>
@@ -403,17 +396,14 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Button trigger modal -->
                   <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     More Details
                   </button>
-
-                  <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header bg-primary text-white">
+                      <div class="modal-content justify-content-center" style="height: 500px;">
+                        <div class="modal-header text-white">
                           <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -596,7 +586,7 @@
                           </div>
                           <div class="modal-body">
                             <div class="gallery">
-                              <img src="image/unit2/shutterstock_1025464807.jpg" class="gallery-imgs" alt="">
+                              <img src="image/unit2/room2.jpg" class="gallery-imgs" alt="">
                               <img src="image/unit2/room2.jpg" class="gallery-imgs" alt="">
                               <img src="image/unit2/r3.jpg" class="gallery-imgs" alt="">
                             </div>
@@ -813,17 +803,15 @@
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/fitness gym.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class=" text-center fw-bolder">Fitness Gym</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Fitness Gym</h3>
+
                 </div>
               </div>
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/open garden park space.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Garden Park Space</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Garden Park Space</h3>
+
 
                 </div>
               </div>
@@ -831,9 +819,8 @@
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/swimming pool.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Swimming Pool</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Swimming Pool</h3>
+
                 </div>
               </div>
             </div>
@@ -843,25 +830,21 @@
               <div class="card-carousel  " style="width: 18rem;">
                 <img src="image/aminities/gazebos.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Gazebos</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Gazebos</h3>
+
                 </div>
               </div>
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/playground.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Playground</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Playground</h3>
                 </div>
               </div>
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/store.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Convenience Store</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Convenience Store</h3>
+
                 </div>
               </div>
             </div>
@@ -871,26 +854,23 @@
               <div class="card-carousel " style="width: 18rem;">
                 <img src="image/aminities/deck.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">View Deck</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>View Deck</h3>
+
                 </div>
               </div>
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/basketball.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Basketball Court</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing iste
-                    dignissimos.</p>
+                  <h3>Basketball Court</h3>
+
                 </div>
 
               </div>
               <div class="card-carousel" style="width: 18rem;">
                 <img src="image/aminities/game area.jpg" class="card-img-top" alt="">
                 <div class="description">
-                  <h3 class="card-title text-center fw-bolder">Game Area</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. vero aliquid iste
-                    dignissimos.</p>
+                  <h3>Game Area</h3>
+
                 </div>
               </div>
             </div>

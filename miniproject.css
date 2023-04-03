@@ -18,7 +18,7 @@
     header {
       position: relative;
       background-color: black;
-      height: 75vh;
+      height: 100vh;
       min-height: 25rem;
       width: 100%;
       overflow: hidden;
@@ -61,12 +61,14 @@
       letter-spacing: 2px;
       font-size: 1em;
       font-weight: 700;
-      width: 100%;
-     
-      
+      width: 100%;       
+    }
+    .navbar-nav .nav-link {
+      background-color: #f8f9fa;
+      color: #000;
     }
     .nav-link:hover{
-      background: #2951f1 ;
+      background: #00c0ff;
       color: #ffffff;
       border-radius: 5px;
       transition: all 0.7s ease 0s;
@@ -78,7 +80,7 @@
       opacity: 0;
       height: 2px;
       width: 100%;
-      background-color: #1a06cc;
+      background: #00c0ff;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -96,7 +98,7 @@
       z-index: 10;
     }
 
-  
+ 
    
     .btn1 {
       padding: 8px 12px;
@@ -179,11 +181,13 @@
           border-radius: 5rem;
         }
     
-     
+     .modal-header{
+      background: #00c0ff;;
+     }
 
       .gallery {
         display: flex;
-        height: 200px;
+        height: 400px;
         border-radius: 4px;
       }
 
@@ -194,10 +198,7 @@
         transition: 0.5s;
         filter: brightness(70%);
       }
-
-      .gallery>.gallery-imgs:hover {
-        flex: 1 1 280px;
-      }
+   
       .gallery>.gallery-imgs:hover {
         flex: 1 1 280px;
         filter: drop-shadow(0 2px 16px rgb(255, 255, 255)) contrast(110%);
@@ -237,7 +238,6 @@
         }  
         .card-carousel {
           width: 350px;
-          background: radial-gradient(#111 250%, #000 350%);
           overflow: hidden;
           position: relative;
         }
@@ -247,11 +247,11 @@
           transition: all 0.3s ease-out;
         }
       
-        .card-carousel:hover img {
-          transform: scale(1.1) translateY(-20px);
+        .card-carousel:hover img {         
           opacity: 0.3s;
           filter: blur(5px);
         }
+      
       
         .description {
           position: absolute;
