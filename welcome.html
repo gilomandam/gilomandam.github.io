@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" href="image/logo files/lucidhomes favicon small.svg" type="image/xicon">
+  <link rel="stylesheet" href="miniproject.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+
+  }
+
+  body {
+    color: #000;
+    height: 100vh;
+
+  }
+
+  header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .nav-link {
+    position: relative;
+    color: #030303;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+
+  .nav-link:hover {
+    background: #00c0ff;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.7s ease 0s;
+
+  }
+
+  .nav-link::after {
+    transition: all 0.2s;
+    content: '';
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background: #00c0ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+
+  .nav {
+    display: flex;
+    max-width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    z-index: 10;
+  }
+
+
+
+  .btn1 {
+    padding: 8px 12px;
+    margin: 4px;
+    background-color: #00c0ff;
+    color: #ffff;
+    border-radius: 5rem;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .btn1:hover {
+    background-color: #080808;
+    color: #ffffff;
+  }
+
+
+  .home-container {
+
+    background-position: center;
+    width: 500px;
+  }
+
+  .banner-text4 {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    left: 3%;
+    right: 6%;
+  }
+
+
+  .banner-text4 h1 {
+    font-weight: 600;
+    font-style: none;
+    opacity: 3;
+  }
+
+  .banner-text4 p {
+    color: #000000;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .about-img img {
+    border-radius: 3rem 0 3rem 3rem;
+    height: 600px;
+  }
+
+  .footer-bg {
+    background: #00c0ff;
+  }
+
+  #footer {
+    background-color: #ffffff;
+    box-shadow: 8px 6px 4px #f0f0f0;
+
+  }
+
+  .footer .btn1.btn-social {
+    padding: 9px 12px;
+    width: 60px;
+    height: 100px;
+    border-radius: 40px;
+    transition: 0, 3s;
+  }
+
+  .text {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 50px;
+  }
+
+  .btn {
+    background: #00c0ff;
+    color: #ffff;
+  }
+
+  .btn2 {
+    padding: 3px 12px;
+    background: #00c0ff;
+    color: white;
+    border-radius: 5rem;
+  }
+
+  .modal-header {
+    background: #00c0ff;
+    ;
+  }
+
+  .gallery {
+    display: flex;
+    height: 400px;
+    border-radius: 4px;
+  }
+
+  .gallery>.gallery-imgs {
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: brightness(70%);
+  }
+
+  .gallery>.gallery-imgs:hover {
+    flex: 1 1 280px;
+    filter: drop-shadow(0 2px 16px rgb(255, 255, 255)) contrast(110%);
+  }
+
+
+  .button {
+
+    background-color: #00c0ff;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .button:hover {
+    background-color: #080808;
+    color: #ffffff;
+  }
+
+  .inner {
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .inner img {
+    transition: all 1.5s ease;
+  }
+
+  .inner:hover img {
+    transform: scale(1.5);
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .msg {
+    height: 6vh;
+  }
+
+  .card-carousel {
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-carousel img {
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+  }
+
+  .card-carousel:hover img {
+    opacity: 0.3s;
+    filter: blur(5px);
+  }
+
+
+  .description {
+    position: absolute;
+    top: 8;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .description h3 {
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0 0 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  .description p {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+  }
+
+  .card-carousel:hover .description h3 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .card-carousel:hover .description p {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+
+  .letter-box {
+    padding-bottom: 10px;
+    gap: 1rem;
+  }
+
+  #featured-card {
+    height: 80%;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar nav-area navbar-expand-sm  bg-light fixed-top">
+    <div class="nav container">
+      <div class="logo"><a href="#home"><img src="image/logo files/lucid homes logo big svg-svg.png"></a></div>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-label="Expand Navigation">
+        <span><i class="bi bi-list"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item text-center">
+            <a class="nav-link fw-bold " href="#home">Home</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fw-bold " href="#rental-units">Rental Units</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fw-bold " href="#facilities">Facilities</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fw-bold " href="#about">About</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fw-bold " href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center" role="search">
+          <button class="btn1" type="btn  shadow-none me-lg-3 me-2" data-bs-toggle="modal"
+            data-bs-target="#loginModel">Login </button>
+          <button class="btn1" type="btn  shadow-none" data-bs-toggle="modal" data-bs-target="#registerModel">Register
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="image/Video3.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Welcome!! LOGIN Successfully!! </h1>
+          <p class="lead mb-0"> <a href="#" class="btn">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid mt-5 pt-5" id="footer">
+    <div class="row g-5">
+      <div class="col-lg-3 p-6">
+        <div class="header">
+          <div class="logo"><img src="image/logo files/lucid homes logo big svg-svg.png"></div>
+        </div>
+        <p class="text-dark mb-5 ">Lucid Homes is a condo rental business aimed to provide the coziest stay for
+          couples,
+          friends, family, or even single people without having to travel miles away from the city.
+        </p>
+      </div>
+
+      <div class="col-lg-3 p-6">
+        <h5 class="mb-3 text-dark "> Quick Links</h5>
+        <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
+        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Rental Units</a><br>
+        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Facilities</a><br>
+        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">About</a><br>
+        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Contact Us</a><br>
+        <a href="#" class="d-inline-block mb-2 text-dark  text-decoration-none">Terms & Condition</a>
+      </div>
+
+
+
+      <div class="  col-lg-3 p-6">
+        <h5 class="mb-3 text-dark ">Get in Touch</h5>
+        <p class="mb-2 text-dark "> <i class="bi bi-geo-alt"></i>123 Street, CDO</p>
+
+        <p class="mb-2 text-dark "><i class="bi bi-telephone"></i>+63123-456-789</p>
+        <p class="mb-2 text-dark "><i class="bi bi-envelope"></i> <span>contact@lucidhomes.com</span> </p>
+
+
+        <div class="flex pt-2">
+          <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-facebook me-1"></i></i></a>
+          <a href="" class="btn2 btn-outline-light  btn-social"> <i class="bi bi-twitter me-1 "></i></i></a>
+          <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-youtube me-1"></i></i></a>
+          <a href="" class="btn2 btn-outline-light  btn-social"><i class="bi bi-linkedin me-1"></i></a>
+        </div>
+      </div>
+      <div class="letter-box col-lg-3 p-6">
+        <h5 class="mb-3 text-dark ">Newsletter</h5>
+        <p class="mb-2 text-dark "> Subscribe and get daily, weekly and monthly newsletter from us!</p>
+
+
+
+        <div class="position-relative mx-auto" style="max-width: 400px;">
+          <input type="text" class="form-relative text-dark bg-transparent w-100 py-3 ps-4 pe-5"
+            placeholder="Your Email">
+          <button class="btn  py-2 position-absolute  top-0 end-0 mt-2 me-2" type="button">SignUp</button>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="footer-bg">
+      <h6 class=" text-center  text-white p-3 m-0">Copyright 2023| All Right Reserved</h6>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sah384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

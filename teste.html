@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" </head>
+
+<body>
+  <h2>Hi Im Gil</h2>
+  <p>dasdasd</p>
+  <p class="demo"></p>
+
+  <button type="button" onclick="getElementIdBy('demo').innerHTML = 'Welcome To !'">Click here</button>
+</body>
+<script>
+  const submit_button = document.querySelector(".btn1");
+  submit_button.onclick = () => {
+
+    //all input data received this variables
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const pnumber = document.getElementById("pnumber").value;
+    const pic = document.getElementById("pic").value;
+    const address = document.getElementById("address").value;
+    const pcode = document.getElementById("pcode").value;
+    const birth = document.getElementById("birth").value;
+    const pass = document.getElementById("pass").value;
+    const cpass = document.getElementById("cpass").value;
+
+    //now store this data in your web browser store
+
+    localStorage.setItem('Name', name);
+    localStorage.setItem('Email Address', email);
+    localStorage.setItem('Phone Number', pnumber);
+    localStorage.setItem('Picture', pic);
+    localStorage.setItem('Address', address);
+    localStorage.setItem('PCode', pcode);
+    localStorage.setItem('DateofBirth', birth);
+    localStorage.setItem('Password', pass);
+    localStorage.setItem('Cpassword', cpass);
+
+    //write some condition
+    if (name == "" && email == "" && pnumber == "" && pic == "" && address == "" && pcode == "" && birth == "" && pass == "" && cpass == "") {
+      alert("Input field has no value");
+    }
+    else {
+      if (pass !== cpass) {
+        alert("password not mactching");
+      } else {
+        alert('registration successful');
+      }
+
+
+    }
+
+  }
+</script>
+
+</html>
+const loginForm = document.getElementById("login-form");
+const errorMsg = document.getElementById("error-msg");
+const successMsg = document.getElementById("success-msg");
+const btnSubmit = document.getElementById("btn-submit");
+
+btnSubmit.addEventListener("click" , (e) => {
+e.preventDefault();
+const username = loginForm.username.value;
+const password = loginForm.password.value;
+
+
+if(username == "test@gmail.com" && password == "test123"){
+successMsg.classList.remove("visually-hidden");
+errorMsg.classList.add("visually-hidden");
+}
+else{
+successMsg.classList.add("visually-hidden");
+errorMsg.classList.remove("visually-hidden");
+}
+})
+
+
+
+<nav class="navbar nav-area navbar-expand-sm  bg-light fixed-top">
+  <div class="nav container">
+    <div class="logo"><a href="index.html"><img src="images/lucid homes logo big svg-svg.png"></a></div>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+      aria-label="Expand Navigation">
+      <span><i class="bi bi-list"></i></span>
+    </button>
+  </div>
+</nav>
+
+<div style="height:100px ;"></div>
+
+<form name="regform" method="post">
+  <section class="container forms">
+
+    <!-- Signup Form -->
+
+    <div class="form signup">
+      <div class="form-content">
+        <form name="regform" method="post">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="name">Name</label>
+                <input type="text" class="form-control shadow-none" id="name" name="name">
+              </div>
+              <div class="col-md-6 p-0">
+                <label class="email">Email</label>
+                <input type="email" class="form-control shadow-none" id="email" name="email">
+              </div>
+
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="pnum">Phone Number</label>
+                <input type="number" class="form-control shadow-none" id="pnum" name="pnum">
+              </div>
+              <div class="col-md-6 p-0">
+                <label class="pic">Picture</label>
+                <input type="file" class="form-control shadow-none" id="pic" name="pic">
+              </div>
+              <div class="col-md-12 p-0">
+                <label class="add">Address</label>
+                <textarea class="form-control shadow-none" name="add" id="address" rows="1"></textarea>
+              </div>
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="pcode">Pin Code</label>
+                <input type="number" class="form-control shadow-none" id="pcode" name="pcode">
+              </div>
+              <div class="col-md-6 p-0">
+                <label class="birth">Date of Birth</label>
+                <input type="text" class="form-control shadow-none" id="birth">
+              </div>
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="pass">Password</label>
+                <input type="password" class="form-control shadow-none" id="cpass" name="cpass" id="birth" name="birth">
+              </div>
+              <div class="col-md-6 p-0">
+                <label class="cpass">Confirm Password</label>
+                <input type="password" class="password form-control shadow-none" id="cpass" name="cpass">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-check d-flex justify-content-center mb-5">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+            <label class="form-check-label" for="form2Example3">
+              I agree all statements in <a href="#!">Terms of service</a>
+            </label>
+          </div>
+
+          <div class="submit-button d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+            <div class=" d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+              <input type="button" class="btn  btn-block mb-4 w-75 mx-5" id="btn-submit" value="Login"
+                onclick="myFunction()">
+
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+      <script>
+        function myFunction() {
+          let nm = document.forms["regform"]["name"].value;
+          let em = document.forms["regform"]["email"].value;
+          let pn = document.forms["regform"]["pnum"].value;
+          let ad = document.forms["regform"]["add"].value;
+          let pc = document.forms["regform"]["pcode"].value;
+          let bt = document.forms["regform"]["birth"].value;
+          let pw = document.forms["regform"]["pass"].value;
+          let cpw = document.forms["regform"]["cpass"].value;
+
+          if (nm == "gil" && em == "gil@gmail.com" && pn == "6312345678" && ad == "cdo" && pc == "1234" && bt == "01/01/01" && pw == "qwerty" && cpw == "qwerty") {
+            window.location.href = "welcome.html";
+          }
+
+        }
+      </script>
+
+
+
+    </div>
+  </section>
