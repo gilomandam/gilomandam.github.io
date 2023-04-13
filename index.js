@@ -1,42 +1,28 @@
+function onLogin() {
+  let em = document.forms["myForm"]["Email"].value;
+  let pw = document.forms["myForm"]["Pass"].value;
 
-const submit_btn = document.querySelector("btn");
-  submit_btn.onclick = () => {
-    alert('Hi Gil')
-    //all input data received this variables
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const pnumber = document.getElementById("pnumber").value;
-    const pic = document.getElementById("pic").value;
-    const address = document.getElementById("address").value;
-    const pcode = document.getElementById("pcode").value;
-    const birth = document.getElementById("birth").value;
-    const pass = document.getElementById("pass").value;
-    const cpass = document.getElementById("cpass").value;
-
-    //now store this data in your web browser store
-
-    localStorage.setItem('Name', name);
-    localStorage.setItem('Email Address', email);
-    localStorage.setItem('Phone Number', pnumber);
-    localStorage.setItem('Picture', pic);
-    localStorage.setItem('Address', address);
-    localStorage.setItem('PCode', pcode);
-    localStorage.setItem('DateofBirth', birth);
-    localStorage.setItem('Password', pass);
-    localStorage.setItem('Cpassword', cpass);
-
-    //write some condition
-    if (name == "" && email == "" && pnumber == "" && pic == "" && address == "" && pcode == "" && birth == "" && pass == "" && cpass == "") {
-      alert("Input field has no value");
-    }
-    else {
-      if (pass !== cpass) {
-        alert("password not mactching");
-      } else {
-        alert('registration successful');
-      }
-
-
-    }
-
+  if (em == "gil@gmail.com" && pw == "12345") {
+    window.location.href = "welcome.html";
   }
+  else {
+    alert("Invalid Email and Password");
+  }
+}
+
+
+function onSubmit() {
+  let nm = document.forms["regform"]["name"].value;
+  let em = document.forms["regform"]["email"].value;
+  let pn = document.forms["regform"]["pnum"].value;
+  let ad = document.forms["regform"]["add"].value;
+  let pc = document.forms["regform"]["pcode"].value;
+  let bt = document.forms["regform"]["birth"].value;
+  let pw = document.forms["regform"]["pass"].value;
+  let cpw = document.forms["regform"]["cpass"].value;
+
+  if (nm == "gil" && em == "gil@gmail.com" && pn == "6312345678" && ad == "cdo" && pc == "1234" && bt == "01/01/01" && pw == "12345" && cpw == "12345") {
+    window.location.href = "welcome.html";
+  }
+
+}

@@ -79,8 +79,8 @@
               </div>
               <div class="mb-3">
                 <div class=" mb-4">
-                  <label class="form-label">Username</label>
-                  <input type="name" name="Uname" class="form-control shadow-none" id="username" required />
+                  <label class="form-label">Email</label>
+                  <input type="name" name="Email" class="form-control shadow-none" id="username" required />
 
                 </div>
                 <div class=" mb-4">
@@ -101,7 +101,7 @@
                   </div>
                 </div>
                 <input type="button" class="btn  btn-block mb-4 w-75 mx-5" id="btn-submit" value="Login"
-                  onclick="myFunction()">
+                  onclick="onLogin()">
 
                 <div class="text-center">
                   <p>Not a member? <a href="register.html" class="link">Register</a></p>
@@ -130,7 +130,7 @@
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <form id="register-form">
+          <form name="regform" method="post">
             <div class="modal-header text-white">
               <h5 class="modal-title d-flex align-items-center">
                 <i class="bi bi-person-lines-fill fs-3 me-2">Create An Account</i>
@@ -147,41 +147,41 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-6 ps-0 mb-3">
-                    <label class="form-label">Name</label>
-                    <input type="text" class="form-control shadow-none" id="name" required />
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control shadow-none" id="name" name="name">
                   </div>
                   <div class="col-md-6 p-0">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control shadow-none" id="email" required />
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control shadow-none" id="email" name="email">
                   </div>
 
                   <div class="col-md-6 ps-0 mb-3">
-                    <label class="form-label">Phone Number</label>
-                    <input type="number" class="form-control shadow-none" id="pnumber" required />
+                    <label for="pnum">Phone Number</label>
+                    <input type="number" class="form-control shadow-none" id="pnum" name="pnum">
                   </div>
                   <div class="col-md-6 p-0">
-                    <label class="form-label">Picture</label>
-                    <input type="file" class="form-control shadow-none" id="pic">
+                    <label for="pic">Picture</label>
+                    <input type="file" class="form-control shadow-none" id="pic" name="pic">
                   </div>
                   <div class="col-md-12 p-0">
-                    <label class="form-label">Address</label>
-                    <textarea class="form-control shadow-none" id="address" rows="1"></textarea>
+                    <label for="add">Address</label>
+                    <textarea class="form-control shadow-none" id="address" rows="1" name="add"></textarea>
                   </div>
                   <div class="col-md-6 ps-0 mb-3">
-                    <label class="form-label">Pin Code</label>
-                    <input type="number" class="form-control shadow-none" id="pcode">
+                    <label for="pcode">Pin Code</label>
+                    <input type="number" class="form-control shadow-none" id="pcode" name="pcode">
                   </div>
                   <div class="col-md-6 p-0">
-                    <label class="form-label">Date of Birth</label>
-                    <input type="text" class="form-control shadow-none" id="birth">
+                    <label for="birth">Date of Birth</label>
+                    <input type="text" class="form-control shadow-none" id="birth" name="birth">
                   </div>
                   <div class="col-md-6 ps-0 mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control shadow-none" id="pass">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control shadow-none" id="pass" name="pass">
                   </div>
                   <div class="col-md-6 p-0">
-                    <label class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control shadow-none" id="cpass">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" class="form-control shadow-none" id="cpass" name="cpass">
                   </div>
                 </div>
               </div>
@@ -192,8 +192,9 @@
                 </label>
               </div>
 
-              <div class="submit-button d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                <button class="btn">Register</button>
+              <div class=" d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <input type="button" class="btn  btn-block mb-4 w-75 mx-5" id="btn-submit" value="Login"
+                  onclick="onSubmit()">
               </div>
           </form>
         </div>
@@ -1141,26 +1142,7 @@
       </div>
     </div>
   </main>
-  <div class=" mb-4">
-    <label class="form-label">Password</label>
-    <input type="password" name="Pass" class="form-control shadow-none" id="password" required />
 
-  </div>
-  <input type="button" class="btn  btn-block mb-4 w-75 mx-5" id="btn-submit" value="Login" onclick="myFunction()">
-
-  <script>
-    function myFunction() {
-      let un = document.forms["myForm"]["Uname"].value;
-      let pw = document.forms["myForm"]["Pass"].value;
-
-      if (un == "burnik123" && pw == "12345") {
-        window.location.href = "welcome.html";
-      }
-      else {
-        alert("Invalid Username and Password");
-      }
-    }
-  </script>
 
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

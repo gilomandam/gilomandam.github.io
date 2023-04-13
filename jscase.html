@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercise 2</title>
+</head>
+<style>
+  body {
+    background: rgb(228, 200, 172);
+    margin-top: 30vh;
+    align-self: center;
+    text-align: center;
+  }
+</style>
+
+<body>
+
+  <h1>Machine Problem1</h1>
+  <div>
+    <label class="form-label">Enter the letter:</label>
+    <input type="text" id="name">
+    <button onclick="checkVowel()">Click</button>
+    <p id="txt"></p>
+  </div>
+
+  <div style="height: 60px;"></div>
+  <h1>Machine Problem2</h1>
+  <div>
+    <label>Input</label>
+  </div>
+  <div>
+    <input type="number" id="name">
+    <input type="number" id="name">
+  </div>
+  <p id="txt"></p>
+  </div>
+  <div>
+    <button onclick="">+</button>
+    <button onclick="">-</button>
+    <button onclick="">*</button>
+    <button onclick="">/</button>
+    <button onclick="">Exponent</button>
+  </div>
+  <script>
+    //Machine Problem1
+    function checkVowel() {
+      nm = document.getElementById("name").value;
+      switch (nm) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+          document.getElementById("txt").innerHTML = "This is a Vowel";
+          break;
+        default: document.getElementById("txt").innerHTML = "This is a Consonant";
+          break;
+      }
+    }
+
+     //Machine Problem2
+
+  </script>
+</body>
+
+</html>
