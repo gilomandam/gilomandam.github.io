@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>REgex</h3>
+  <div id="methods_result"></div>
+
+  <script>
+    let programmerQuote = `"Make it work, make it right, make it fast." – Kent Beck`;
+    addDisplayResult("methods_result", programmerQuote.length);
+    addDisplayResult("methods_result", programmerQuote.slice(0, 10));
+
+    let emplyees = ["John", "Brian", "Michelle", "Angela", "Nicolas", "Grace"];
+    addDisplayResult("arr_methods_result", emplyees);
+    addDisplayResult("arr_methods_result", emplyees.join(" - "));
+
+    let referenceNumer = '1904';
+
+    let sales = [50, 30, 15, 20, 40, 20, 60, 45];
+    let allnumbers = numbers2.concat(numbers3, numbers);
+    addDisplayResult("arr_methods_result", allnumbers.join(" * "));
+
+
+    /*  const statement = "A good programmer is someone who always looks both ways";
+   
+       addDisplayResult("methods_results", statement.match(/e/g).length);
+       addDisplayResult("methods_results", statement.match(/oo/g).length);
+       addDisplayResult("methods_results", statement.match(/a/g).length);
+   
+       const regExSixDigit = /^\d{6}$/
+   
+       const validateNumber = () => {
+         let inputStr = document.getElementById('number_fld1').value;
+         addDisplayResult("methods_results", regExSixDigit.test(inputStr));
+       }
+   
+       const regExEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+)
+     */
+  </script>
+</body>
+
+</html>
+
+<body>

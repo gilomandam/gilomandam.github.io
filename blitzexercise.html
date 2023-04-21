@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>Exercise</h3>
+  <div id="methods_result"></div>
+  <div id="methods_result1"></div>
+  <div id="methods_result2"></div>
+  <div id="methods_result3"></div>
+  <div id="methods_result4"></div>
+  <div id="methods_result5"></div>
+
+  <script>
+    let programmerQuote = `"Make it work, make it right, make it fast." – Kent Beck`;
+
+    let emplyees = ["John", "Brian", "Michelle", "Angela", "Nicolas", "Grace"];
+
+    let referenceNumer = '1904';
+
+    let sales = [50, 30, 15, 20, 40, 20, 60, 45];
+
+
+    sales.splice(2, 0, 23, 42);
+    document.getElementById('methods_result1').innerHTML = sales.join(" * ");
+    document.getElementById('methods_result').innerHTML = programmerQuote.toUpperCase();
+    document.getElementById("methods_result3").innerHTML = programmerQuote.replace(/\bMake\b/gi, "yuoi");
+
+    sales.splice(5, 0, 100, 500,)
+    document.getElementById("methods_result4").innerHTML = sales.join("||");
+
+
+  </script>
+</body>
+
+</html>

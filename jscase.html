@@ -32,17 +32,19 @@
     <label>Input</label>
   </div>
   <div>
-    <input type="number" id="name">
-    <input type="number" id="name">
+    <input type="number" id="number">
+    <p id="num1"></p>
+    <input type="number" id="number2">
+    <p id="num2"></p>
   </div>
-  <p id="txt"></p>
-  </div>
+
+
   <div>
-    <button onclick="">+</button>
-    <button onclick="">-</button>
-    <button onclick="">*</button>
-    <button onclick="">/</button>
-    <button onclick="">Exponent</button>
+    <button onclick="checkAdd()">+</button>
+    <button onclick="checkSub()">-</button>
+    <button onclick="checkMul()">*</button>
+    <button onclick="checkDiv()">/</button>
+    <button onclick="checkExpo()">Exponent</button>
   </div>
   <script>
     //Machine Problem1
@@ -61,13 +63,32 @@
         case 'U':
           document.getElementById("txt").innerHTML = "This is a Vowel";
           break;
-        default: document.getElementById("txt").innerHTML = "This is a Consonant";
+        default:
+          document.getElementById("txt").innerHTML = "This is a Consonant";
           break;
       }
     }
 
-     //Machine Problem2
-
+    //Machine Problem2
+    function checkAdd() {
+      num = document.getElementById("number").value;
+      switch (num) {
+        case '2':
+          document.getElementById("num1").innerHTML = "This is a Pow of 2";
+          break;
+        case '3':
+          document.getElementById("num2").innerHTML = "This is a Pow of 3";
+          break;
+      }
+    }
+ /*   const currAdd = Add ();
+         document.getElementById("num2").innerHTML = currAdd.equivalent();
+   
+         let num = '';
+         switch(currAdd.equivalent()){
+           case
+         }
+   */
   </script>
 </body>
 
